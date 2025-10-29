@@ -1,0 +1,117 @@
+
+.temp-dashboard-container {
+  width: 100%;
+  max-width: 1300px;
+  height: auto;
+  margin: 0 auto;
+  /* padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.temp-chart-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.temp-chart-wrapper > :nth-child(1) {
+  grid-column: span 12;
+  max-width: 100%;
+}
+
+.temp-chart-wrapper > :nth-child(2) {
+  grid-column: span 8;
+  max-width: 100%;
+}
+
+.temp-chart-wrapper > :nth-child(3) {
+  grid-column: span 4;
+  max-width: 100%;
+}
+
+.temp-chart-wrapper > :nth-child(4) {
+  grid-column: span 12;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 992px) {
+  /* .temp-chart-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .temp-chart-wrapper > :nth-child(1) {
+    grid-column: span 6;
+  }
+  .temp-chart-wrapper > :nth-child(2) {
+    grid-column: span 6;
+  }
+  .temp-chart-wrapper > :nth-child(3) {
+    grid-column: span 6;
+  }
+  .temp-chart-wrapper > :nth-child(4) {
+    grid-column: span 6;
+  } */
+
+  .temp-chart-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .temp-chart-wrapper > * {
+    grid-column: span 1 !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .temp-dashboard-container {
+    width: 95%;
+    padding: 1.5rem;
+  }
+  .temp-chart-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .temp-chart-wrapper > * {
+    grid-column: span 1 !important;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .dashboard-heading {
+    font-size: 1.5rem;
+  }
+  .temp-dashboard-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .temp-dashboard-container {
+    width: 100%;
+    border-radius: 0;
+  }
+  
+  .temp-chart-wrapper {
+    gap: 1rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .dashboard-heading {
+    font-size: 1.2rem;
+  }
+}

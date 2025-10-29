@@ -1,0 +1,96 @@
+.corr-dashboard-container {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.corr-chart-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.corr-chart-wrapper > :nth-child(1) {
+  grid-column: span 6;
+  height: 50vh;
+  max-width: 100%;
+}
+
+.corr-chart-wrapper > :nth-child(2) {
+  grid-column: span 6;
+  height: 40vh;
+  max-width: 100%;
+}
+
+.corr-chart-wrapper > :nth-child(3) {
+  grid-column: span 12;
+  height: 40vh;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .corr-chart-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .corr-chart-wrapper > :nth-child(1) {
+    grid-column: span 4;
+  }
+  .corr-chart-wrapper > :nth-child(2) {
+    grid-column: span 4;
+  }
+  .corr-chart-wrapper > :nth-child(3) {
+    grid-column: span 8;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .corr-chart-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .corr-chart-wrapper > :nth-child(1) {
+    grid-column: span 3;
+  }
+  .corr-chart-wrapper > :nth-child(2) {
+    grid-column: span 3;
+  }
+  .corr-chart-wrapper > :nth-child(3) {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .corr-chart-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .corr-chart-wrapper > * {
+    grid-column: span 1 !important;
+    height: auto;
+  }
+  .corr-dashboard-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .corr-dashboard-container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+  .dashboard-heading {
+    font-size: 1.2rem;
+  }
+}

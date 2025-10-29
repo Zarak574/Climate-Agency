@@ -1,0 +1,108 @@
+.sat-dashboard-container {
+  width: 90%;
+  max-width: 1200px;
+  height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dashboard-heading {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+}
+
+.sat-chart-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.sat-chart-wrapper > :nth-child(1) {
+  grid-column: span 12;
+  height: 60vh;
+  max-width: 100%;
+}
+
+.sat-chart-wrapper > :nth-child(2) {
+  grid-column: span 12;
+  height: auto;
+  max-width: 100%;
+}
+
+.sat-chart-wrapper > :nth-child(3) {
+  grid-column: span 8;
+  height: 40vh;
+  max-width: 100%;
+}
+
+.sat-chart-wrapper > :nth-child(4) {
+  grid-column: span 4;
+  height: 40vh;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+  .sat-chart-wrapper {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .sat-chart-wrapper > :nth-child(1) {
+    grid-column: span 6;
+  }
+  .sat-chart-wrapper > :nth-child(2) {
+    grid-column: span 2;
+  }
+  .sat-chart-wrapper > :nth-child(3) {
+    grid-column: span 6;
+  }
+  .sat-chart-wrapper > :nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sat-chart-wrapper {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .sat-chart-wrapper > :nth-child(1) {
+    grid-column: span 4;
+  }
+  .sat-chart-wrapper > :nth-child(2) {
+    grid-column: span 2;
+  }
+  .sat-chart-wrapper > :nth-child(3) {
+    grid-column: span 4;
+  }
+  .sat-chart-wrapper > :nth-child(4) {
+    grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sat-chart-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .sat-chart-wrapper > * {
+    grid-column: span 1 !important;
+    height: auto;
+  }
+  .sat-dashboard-container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sat-dashboard-container {
+    width: 100%;
+    border-radius: 0;
+    padding: 0.5rem;
+  }
+  .dashboard-heading {
+    font-size: 1.2rem;
+  }
+}

@@ -1,0 +1,145 @@
+.sat-summary-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: #ffffffda;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(29, 53, 87, 0.1);
+}
+
+.sat-summary-card {
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 6px rgba(29, 53, 87, 0.15);
+  border-radius: 8px;
+  padding: 15px 20px;
+  width: calc(25% - 15px);
+  min-width: 180px;
+  height: 160px;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sat-summary-card:hover {
+  box-shadow: 0 6px 12px rgba(29, 53, 87, 0.25);
+}
+
+.sat-summary-card-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.sat-summary-card-icon {
+  font-size: 2rem;
+}
+
+.sat-icon-max {
+  color: #1d3557;
+}
+.sat-icon-min {
+  color: #457b9d;
+}
+.sat-icon-average {
+  color: #a8dadc;
+}
+.sat-icon-stddev {
+  color: #457b9d;
+}
+.sat-icon-stations {
+  color: #1d3557;
+}
+
+.sat-summary-card-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1d3557;
+  margin-bottom: 8px;
+}
+
+.sat-summary-card-value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1d3557;
+  margin-bottom: 5px;
+}
+
+.sat-summary-card-subtitle {
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.sat-summary-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-right: 30px;
+}
+
+.sat-summary-loading {
+  text-align: center;
+  padding: 50px;
+  color: #555;
+}
+
+.spinner-with-logo {
+  margin-bottom: 12px;
+}
+
+.spinner-logo {
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1200px) {
+  .sat-summary-card {
+    width: calc(33.33% - 13.33px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .sat-summary-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sat-summary-card {
+    width: 100%;
+    min-width: auto;
+  }
+  .sat-summary-cards-container {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .sat-summary-card {
+    padding: 10px;
+    height: auto;
+  }
+  .sat-summary-card-icon {
+    font-size: 1.5rem;
+  }
+  .sat-summary-card-title {
+    font-size: 0.9rem;
+  }
+  .sat-summary-card-value {
+    font-size: 1.2rem;
+  }
+  .sat-summary-card-subtitle {
+    font-size: 0.8rem;
+  }
+}

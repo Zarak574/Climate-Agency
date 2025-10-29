@@ -1,0 +1,111 @@
+:root {
+  --teal: #80CBC4;
+  --aqua: #b4ebe6;
+  --cream: #fbf8ef;
+  --dark-cream: #ffebca;
+  --orange: #ffb433;
+  --dark-teal: #00634c;
+  --dark-blue: #004574;
+  --light-blue: #f5feff;
+  --hover-bg: #f5f5f5;
+  --grey: #e7e5e5;
+  --dark-orange: #d18400;
+}
+
+
+.allusers-container {
+  max-width: 1100px;      
+  width: 95%;             
+  margin: 40px auto;
+  padding: 40px 50px;     
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.allusers-heading {
+  font-size: 32px;      
+  margin-bottom: 30px;
+  color: #222;
+}
+
+.allusers-error {
+  color: #d9534f;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.allusers-table {
+  width: 100%;
+  border-collapse: separate;  
+  border-spacing: 0;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  table-layout: fixed; 
+}
+
+.allusers-table thead tr {
+  background-color: var(--dark-cream);
+}
+
+.allusers-table th,
+.allusers-table td {
+  padding: 18px 24px;  
+  text-align: left;
+  border: none;         
+  border-bottom: 2px solid var(--aqua); 
+  word-wrap: break-word;
+}
+
+.allusers-table tbody tr:nth-child(even) {
+  background-color: var(--hover-bg);  
+}
+
+.allusers-table tbody tr:hover {
+  background-color: var(--cream);
+  cursor: pointer;
+}
+
+.allusers-table th {
+  font-weight: 700;
+  color: #333;
+  border-bottom: 2px solid var(--orange); 
+}
+
+/* Responsive: Adjust font size and padding on smaller screens */
+@media (max-width: 768px) {
+  .allusers-container {
+    padding: 25px 20px;
+  }
+
+  .allusers-heading {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .allusers-table th,
+  .allusers-table td {
+    padding: 12px 10px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .allusers-container {
+    padding: 15px 10px;
+  }
+
+  .allusers-heading {
+    font-size: 20px;
+  }
+
+  .allusers-table th,
+  .allusers-table td {
+    padding: 10px 8px;
+    font-size: 12px;
+  }
+}

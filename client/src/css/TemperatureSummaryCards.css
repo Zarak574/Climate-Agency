@@ -1,0 +1,151 @@
+
+.temp-summary-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #ffffffda;
+  border-radius: 10px;
+  
+}
+
+.temp-summary-card {
+  position: relative;
+  background: white;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 0.15);
+  border-radius: 8px;
+  padding: 10px;
+  width: calc(25% - 15px);
+  min-width: 250px;
+  height: auto;
+  text-align: left;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.temp-summary-card:hover {
+  box-shadow: 0 6px 12px rgb(0 0 0 / 0.25);
+}
+
+.temp-summary-card-icon-wrapper {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.temp-summary-card-icon {
+  font-size: 2rem;
+}
+
+.temp-icon-max {
+  color: #db5800;
+}
+.temp-icon-min {
+  color: #00e9d5;
+}
+.temp-icon-avg-max {
+  color: #f19900;
+}
+.temp-icon-avg-min {
+  color: #009688;
+}
+.temp-icon-overall {
+  color: #00bba8;
+}
+.temp-icon-variability {
+  color: #ffb433;
+}
+
+.temp-summary-card-title {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.temp-summary-card-value {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 5px;
+}
+
+.temp-summary-card-subtitle {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+.temp-summary-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding-right: 30px; /* Add space to avoid overlap with icon */
+}
+
+.summary-loading {
+  text-align: center;
+  padding: 50px;
+  color: #555;
+}
+
+.spinner-with-logo {
+  margin-bottom: 12px;
+}
+
+.spinner-logo {
+  width: 50px;
+  height: 50px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Responsive design */
+
+@media screen and (max-width: 1200px) {
+  .temp-summary-card {
+    width: calc(33.33% - 13.33px);
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .temp-summary-card {
+    width: calc(50% - 10px);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .temp-summary-card {
+    width: 100%;
+    min-width: auto;
+  }
+  .temp-summary-cards-container {
+    padding: 10px;
+    gap: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .temp-summary-card {
+    padding: 5px;
+  }
+  .temp-summary-card-icon {
+    font-size: 1.5rem;
+  }
+  .temp-summary-card-title {
+    font-size: 0.8rem;
+  }
+  .temp-summary-card-value {
+    font-size: 1rem;
+  }
+  .temp-summary-card-subtitle {
+    font-size: 0.7rem;
+  }
+}
