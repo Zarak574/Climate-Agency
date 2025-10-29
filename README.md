@@ -19,7 +19,7 @@ Machine Learning: Forecasting models for temperature, rainfall, humidity, and ai
 ![alt text]([http://url/to/img.png](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image2.jpg))
 
 🔮 Predictive Analytics – Generate monthly and yearly forecasts for temperature, rainfall, humidity, and air pressure using machine learning models.
-![alt text]([http://url/to/img.png](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image3.jpg))
+![alt text](https://github.com/Zarak574/Climate-Agency/blob/dc247b35259e9091fc4671e701301019f48c370d/image3.jpg)
 
 🚨 Anomaly Detection – Detect unusual changes and patterns in climate variables across regions.
-![alt text]([http://url/to/img.png](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image4.jpg))
+![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image4.jpg)
