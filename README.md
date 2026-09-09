@@ -33,5 +33,5 @@ Machine Learning: Forecasting models for temperature, rainfall, humidity, and ai
 🚨 Anomaly Detection – Detect unusual changes and patterns in climate variables across regions.
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image4.jpg)
-<img width="1148" height="1266" alt="image1" src="https://github.com/Zarak574/Climate-Agency/blob/dc247b35259e9091fc4671e701301019f48c370d/image3.jpg">
+<img width="1148" height="1266" alt="image1" src="https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image4.jpg">
 
