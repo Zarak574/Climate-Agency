@@ -1,4 +1,5 @@
 # Climate-Agency
+
 A Climate Monitoring, Forecasting, and Analytics Platform
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image1.jpg)
@@ -20,13 +21,20 @@ Machine Learning: Forecasting models for temperature, rainfall, humidity, and ai
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image2.jpg)
 
+<img width="761" height="357" alt="image2" src="https://github.com/user-attachments/assets/df0ef212-8df1-41ab-b75b-9c368ce86fa9" />
+
 
 🔮 Predictive Analytics – Generate monthly and yearly forecasts for temperature, rainfall, humidity, and air pressure using machine learning models.
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/dc247b35259e9091fc4671e701301019f48c370d/image3.jpg)
 
+<img width="720" height="362" alt="image3" src="https://github.com/user-attachments/assets/73240a99-971c-4db1-84f8-08c2f8e67ffb" />
+
 
 🚨 Anomaly Detection – Detect unusual changes and patterns in climate variables across regions.
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image4.jpg)
+
+<img width="735" height="369" alt="image4" src="https://github.com/user-attachments/assets/94a559b9-a11f-42c7-9af3-0762180caf71" />
+
 
