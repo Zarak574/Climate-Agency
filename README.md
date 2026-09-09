@@ -3,8 +3,6 @@ A Climate Monitoring, Forecasting, and Analytics Platform
 
 ![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image1.jpg)
 
-<img width="1148" height="1266" alt="image1" src="https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image1.jpg">
-
 
 # Overview
 EarthScape Climate Agency is a full-stack web application designed to analyze, visualize, and predict global climate trends using real-time and historical data. The platform empowers users, researchers, and environmental organizations to explore insights about temperature, precipitation, air quality, solar radiation, and other atmospheric factors through interactive dashboards and predictive analytics.
