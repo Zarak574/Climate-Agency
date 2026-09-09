@@ -2,7 +2,7 @@
 
 A Climate Monitoring, Forecasting, and Analytics Platform
 
-![alt text](https://github.com/Zarak574/Climate-Agency/blob/4e611a8dcedb95b7f7880ea58e2e1f104aceb5e4/image1.jpg)
+<img width="771" height="662" alt="image1" src="https://github.com/user-attachments/assets/5199ae91-7802-4227-a6de-1b5fe2bb6baf" />
 
 
 # Overview
